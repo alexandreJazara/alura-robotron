@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var lista = ["Laranja", "Vermelho", "Branco", "Amarelo", "Rosa"]; 
+    console.log('Temos '+lista.length)
+    lista.forEach(function (item, indice) {
+        console.log(item, indice);        
+    })
+
+    pos = lista.indexOf("Vermelho")
+    lista.splice(pos,1);
+    console.log("\nNova lista\n\n")
+    lista.forEach(function (item, indice) {
+        console.log(item, indice);        
+    })
+</script>
